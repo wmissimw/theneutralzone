@@ -1,0 +1,6 @@
+{
+  "name": "theneutralzone",
+  "dependencies": {
+    "foundation": "^5.5.3"
+  }
+}

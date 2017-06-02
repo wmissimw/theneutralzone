@@ -1,0 +1,20 @@
+        <header>
+          <nav class="tab-bar">
+            <section class="left-small">
+              <a class="left-off-canvas-toggle fi-list size-60"></i><span></span></a>
+            </section>
+            <section class="logo right tab-bar-section">
+              <h1><a href="/">TNZ</a></h1>
+            </section>
+          </nav>{% if page.path contains '_posts' %}
+          <nav class="breadcrumbs" role="menubar" aria-label="breadcrumbs">
+            <a href="/">TNZ</a>
+            <a href="/penalties">Penalties</a>
+            <a href="/posts">Posts</a>
+            <a class="current" href="#">{{ page.title }}</a>{% else %}
+          <nav class="breadcrumbs" role="menubar" aria-label="breadcrumbs">
+            <a href="/">TNZ</a>
+            <a href="/penalties">Penalties</a>
+            <a href="/posts">Posts</a>{% endif %}
+          </nav>
+        </header>

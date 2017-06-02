@@ -1,0 +1,192 @@
+/* `8.`888b                 ,8' ,8.       ,8.
+ *  `8.`888b               ,8' ,888.     ,888.
+ *   `8.`888b             ,8' .`8888.   .`8888.
+ *    `8.`888b     .b    ,8' ,8.`8888. ,8.`8888.
+ *     `8.`888b    88b  ,8' ,8'8.`8888,8^8.`8888.
+ *      `8.`888b .`888b,8' ,8' `8.`8888' `8.`8888.
+ *       `8.`888b8.`8888' ,8'   `8.`88'   `8.`8888.
+ *        `8.`888`8.`88' ,8'     `8.`'     `8.`8888.
+ *         `8.`8' `8,`' ,8'       `8        `8.`8888.
+ *          `8.`   `8' ,8'         `         `8.`8888.
+ */
+
+$default-text-shadow-color: rgba(black, 0.2);
+$default-text-shadow-h-offset: 1px;
+$default-text-shadow-v-offset: 2px;
+$default-text-shadow-blur: 2px;
+
+@import "compass/css3";
+@import 'https://fonts.googleapis.com/css?family=Ubuntu';
+
+@font-face {
+  font-family: 'Ubuntu', sans-serif;
+}
+
+h1 {
+  @include text-shadow(
+  rgba(black, 0.2) 1px 1px 0,
+  rgba(black, 0.2) 2px 2px 3px,
+  rgba(black, 0.2) 4px 4px 5px);
+}
+
+h2, h3, h4, h5, h6 {
+  @include single-text-shadow;
+}
+
+
+a, i, .has-tip {
+  @include transition-property(all);
+  @include transition-duration(.5s);
+  @include transition-timing-function(ease-in-out);
+  @include single-text-shadow;
+}
+
+li.social {
+  a { color: #bdbdbd; }
+    &:hover .twitter { color: #55acee; }
+    &:hover .instagram { color: #517fa4; }
+}
+
+a:link,a:visited { color: #0000ff; }
+a:hover,a:active { color: #ff0000; }
+
+header {
+  margin-bottom: 15px;
+}
+
+.logo {
+  h1 {
+    font-family: 'Ubuntu';
+    font-weight: 900;
+    font-size: 500%;
+    color: #fff;
+      a {
+        color: #fff;
+        @include text-shadow(
+        rgba(black, 0.2) 1px 1px 0,
+        rgba(black, 0.2) 2px 2px 3px,
+        rgba(black, 0.2) 4px 4px 5px);
+          &:hover {
+            color: #ff0000;
+          }
+      }
+  }
+}
+
+.left-small {
+  width: 6.25rem;
+  height: 6.25rem;
+  position: absolute;
+  top: 0;
+  border-right: none;
+  left: 0;
+  padding: 1px 30px 0 30px;
+}
+
+.tab-bar-section {
+  padding: 0 0.625rem;
+  position: absolute;
+  text-align: left;
+  height: 6.25rem;
+  top: 0;
+}
+
+.tab-bar-section.right {
+  left: 6.25rem;
+  right: 0;
+  text-align: left;
+}
+
+ul.off-canvas-list li {
+  font-family: 'Ubuntu';
+    a:hover {
+      color: #ff0000;
+      background: #f5f5f5;
+      @include transition-property(all);
+      @include transition-duration(.5s);
+      @include transition-timing-function(ease-in-out);
+    }
+}
+
+.tooltip {
+  opacity: 0.9;
+  filter: alpha(opacity=90);
+}
+
+.tab-bar {
+  box-shadow: 0 -4px 4px rgba(0,0,0,.5), 0 4px 4px rgba(0,0,0,.5);
+}
+
+.left-off-canvas-menu {
+  box-shadow: -4px 0 4px rgba(0, 0, 0, 0.5), 4px 0 4px rgba(0, 0, 0, 0.5)
+}
+
+.move-right .exit-off-canvas {
+  box-shadow: none;
+}
+
+html, body, body > .wrap, .off-canvas-wrap {
+  height: 100%;
+}
+
+.off-canvas-wrap {
+  overflow-y: scroll;
+}
+
+.inner-wrap {
+  min-height: 100%;
+}
+
+.wrap {
+  height: 100%;
+}
+
+ul.icon {
+  list-style-type: none;
+  font-size: 1.3rem;
+    li {
+      text-indent: -1.4em;
+      margin: 0.5em 2em;
+        &:before {
+          font-family: 'foundation-icons';
+          float: left;
+          width: 1.4em;
+          text-shadow: 1px 4px 6px #FFF,0 0 0 #000,1px 4px 6px #FFF;
+        }
+    }
+}
+
+.clearing-container {
+  a {
+    color: #0000ff;
+    @include text-shadow(
+    rgba(black, 0.2) 1px 1px 0,
+    rgba(black, 0.2) 2px 2px 3px,
+    rgba(black, 0.2) 4px 4px 5px);
+      &:hover {
+        color: #ff0000;
+      }
+  }
+}
+
+.columns {
+  padding: 0 .75rem;
+}
+
+span > .clearing-main-prev, .clearing-main-next {
+  &:hover {
+    color: #ff0000;
+    }
+}
+
+h6 {
+  font-size: .5em;
+}
+
+.fi-previous:before {
+    margin-right: 1.375rem;
+}
+
+.back {
+  text-transform: uppercase;
+}

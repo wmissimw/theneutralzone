@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Hockey">
+{% if page.home %}    <title>
+      {{ page.title }}
+    </title>{% else %}    <title>
+      {{ page.title }}
+    </title>{% endif %}
+    {% include google_analytics.html %}    <link rel="stylesheet" href="/assets/css/main.min.css">
+    <script src="/assets/js/modernizr.js"></script>
+  </head>
+  <body>
+    <div class="off-canvas-wrap" data-offcanvas>
+      <div class="inner-wrap">
+{% include sidebar.html %}{% include header.html %}{{ content }}{% include footer.html %}        <a class="exit-off-canvas"></a>
+      </div>
+    </div>
+    <script src="/assets/js/app.min.js"></script>
+    <script>
+      $(document).foundation();
+    </script>
+</body>
+</html>

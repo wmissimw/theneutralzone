@@ -1,0 +1,17 @@
+---
+layout: default
+title: The Posts
+---
+
+        <section id="main">
+          <div class="row">
+            <div class="large-12 columns">
+              <h1 class="text-center">{{ page.title }}</h1>
+              <hr>
+              <ul class="no-bullet">{% for post in site.posts %}
+                <li class="text-center"><a href="{{ post.url }}">{{ post.title }}</a></li>{% endfor %}
+              </ul>
+              <hr>
+            </div>
+          </div>
+        </section>

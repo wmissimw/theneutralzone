@@ -1,0 +1,26 @@
+@import "normalize";
+@import "settings";
+
+// specific foundation components
+@import "foundation/components/grid";
+@import "foundation/components/block-grid";
+@import "foundation/components/breadcrumbs";
+@import "foundation/components/clearing";
+@import "foundation/components/flex-video";
+@import "foundation/components/inline-lists";
+@import "foundation/components/magellan";
+@import "foundation/components/pagination";
+@import "foundation/components/panels";
+@import "foundation/components/reveal";
+@import "foundation/components/thumbs";
+@import "foundation/components/tooltips";
+@import "foundation/components/top-bar";
+@import "foundation/components/type";
+@import "foundation/components/offcanvas";
+@import "foundation/components/visibility";
+
+// custom styles
+@import "custom";
+
+// foundation icons
+@import "icons";
