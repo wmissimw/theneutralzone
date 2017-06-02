@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "repository": {
     "type": "git",
-    "url": "https://github.com/twimjeeni/theneutral.zone.git"
+    "url": "https://github.com/wmissimw/theneutral.zone.git"
   },
   "devDependencies": {
     "browserify-shim": "^3.8.13",
